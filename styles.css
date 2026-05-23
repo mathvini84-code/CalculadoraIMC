@@ -1,0 +1,145 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral da página */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    background-color: black;
+    background-image: radial-gradient(circle at 10% 20%, rgba(11, 233, 85, 0.15) 0%, transparent 40%),
+                      radial-gradient(circle at 95% 85%, rgba(17, 0, 255, 0.2) 0%, transparent 35%);
+    background-attachment: fixed;
+    color: #f9f9f9;
+}
+
+/* Sessões do header */
+header {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    gap: 15px;
+    justify-content: space-between;
+}
+
+header h1{
+    margin: 20px 0 20px 20px;
+    padding: 20px auto;
+}
+
+.imc {
+    color: rgb(59, 50, 194);
+}
+
+header nav ul li {
+    display: inline-flex;
+    font-weight: bold;
+    margin-left: 15px;
+    padding: 0 20px 0 20px;
+}
+
+header nav ul li a {
+    color:#f9f9f9;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: rgb(59, 50, 194);
+    text-decoration: underline; 
+}
+
+/* Sessão sobre IMC */
+#sobreimc {
+    background: linear-gradient(140deg, rgba(11, 233, 85, 0.15), rgba(17, 0, 255, 0.2));
+    margin: 70px 350px 70px 350px;
+    padding: 10px 50px 10px 50px;
+    border-radius: 14px;
+    border: 1px solid rgb(59, 50, 194);
+}
+
+#sobreimc h2 {
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+
+#sobreimc p {
+    text-align: center;
+    margin-bottom: 8px;
+    padding: 0px 10px 0px 10px;
+}
+
+/* Sessão da calculadora */
+#calculadoraimc {
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    background: linear-gradient(140deg, rgba(11, 233, 85, 0.15), rgba(17, 0, 255, 0.2));
+    margin: 70px 350px 70px 350px;
+    border: 1px solid rgb(59, 50, 194);
+    border-radius: 14px;
+    gap: 10px;
+}
+
+#calculadoraimc h2 {
+    text-align: center;
+    margin: 15px 0 20px 0;
+}
+
+#calculadoraimc label{
+    display: flex;
+    flex-direction: column;
+}
+
+#calculadoraimc input{
+    height: 25px;
+    width: 200px;
+    font-size: medium;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1.75px solid rgb(59, 50, 194);
+    background: rgb(190, 190, 190);
+    padding: auto;
+    text-align: center;
+}
+
+#calculadoraimc button {
+    color: #f9f9f9;
+    width: 200px;
+    height: 35px;
+    font-size: large;
+    margin: auto;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    border: 2px solid rgb(59, 50, 194);
+    background-color: rgb(59, 50, 194);
+}
+
+#calculadoraimc button:hover {
+    background: rgb(34, 22, 201);
+}
+
+#calculadoraimc .resultadosimc {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: 100px;
+    padding: 10px 0px 10px 0px;
+    margin: 0px 180px 20px 180px;
+    border-radius: 10px;
+    border: 1px solid rgb(59, 50, 194);
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: rgba(34, 22, 201, 0.15);
+}
+
+
+/* Rodapé */
+footer {
+    text-align: center;
+    font-size: small;
+}
