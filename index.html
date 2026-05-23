@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <!-- Puxando a script da calculadora -->
+    <script src="JavaScript/calculadoraimc.js"></script>
+    <!-- Puxando o CSS da página -->
+    <link rel="stylesheet" href="Estilos/styles.css">
+</head>
+<body>
+    <!-- Navbar com links (um descritivo da página e outro para a calculadora)-->
+    <header>
+        <h1>Calculadora <span class="imc">IMC</span></h1>
+        <nav>
+            <ul>
+                <li><a href="#sobreimc">Oque é o IMC</a></li>
+                <li><a href="#calculadoraimc">Calculadora</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Sessão de explicação do IMC -->
+    <section id="sobreimc">
+        <h2>| Oque é e para que serve o IMC ?</h2>
+            <p>O <b>IMC (Índice de Massa Corporal)</b> é um cálculo matemático que relaciona o peso e a altura de uma pessoa. Ele serve para avaliar o estado nutricional, indicar se alguém está no "peso ideal", ou identificar quadros de desnutrição, sobrepeso e obesidade.</p>
+    </section>
+    <!-- Sessão da calculadora -->
+    <section id="calculadoraimc">
+        <h2>Calcule seu IMC</h2>
+            <!-- Solicitando Peso -->
+            <label for="peso">
+            Digite o seu peso (KG): 
+            <input type="text" inputmode="decimal" id="peso" required>
+            </label>
+            <br/><br/>
+            <!-- Solicitando Altura -->
+            <label for="altura">
+            Digite a sua altura (Metros): 
+            <input type="text" inputmode="decimal" id="altura" required>
+            </label>
+            <br/><br/>
+            <button onclick="calculadoraIMC()">Calcular</button>
+            <div class="resultadosimc">
+                <p id="resultado"></p>
+                <p id="classificacaoimc"></p>
+            </div>
+    </section>    
+    <!-- Footer da página -->
+    <footer>
+        <h5>&copy; 2026 Matheus Oliveira - Todos os direitos reservados</h5>
+    </footer>
+</body>
+</html>
